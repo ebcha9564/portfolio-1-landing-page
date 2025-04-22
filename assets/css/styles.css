@@ -1,0 +1,136 @@
+@import url('animate.css');
+@import url('normalize.css');
+@import url('common.css');
+@import url('reset.css');
+
+:root{
+    --white-color: #EEF1F6;
+    --black-color:#070a11;
+    --grey-color: #6e6e6e;
+    --brand-color: #1A6AFF;
+    --main-background-color: #F4F7FC;
+    --review-page-color: #23293F;
+    --footer-color: #3A5ED8;
+    --normal-font-size:1.125rem;
+    --nav-font-size: 1.0625rem;
+    --font-regular:400;
+    --font-medium:500;
+    --font-large: 600;
+    --main-line-height: 150%;
+    --banner-font-size: 3.25rem;
+
+    ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+
+/*header - navigation */
+header{
+    background: #F4F7FC;
+    height: auto;
+    width: 100%;
+}
+header li{
+    padding-left: 6.25rem;
+    color: var(--black-color)
+}
+
+header a{
+    font-size: var(--nav-font-size);
+    font-weight: var(--font-medium);
+}
+
+.navi{
+    padding-top: 0.21875rem;
+    padding-bottom: 0.21875rem;
+}
+
+.banner-section{
+    background: var(--brand-color);
+    height: 78.5vh;
+}
+
+.banner-text-content h2{
+    line-height: 120%;
+    color: var(--white-color);
+    font-size: var(--banner-font-size);
+    font-weight: var(--font-large);
+    margin-top: 0;
+
+}
+
+.button-content{
+    justify-content: left;
+}
+
+.button-content p{
+    margin-top: 0;
+    color: var(--white-color);
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .section-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .nav-icon{
+        padding-left: 5rem;
+    }
+    .nav-menu{
+        padding-right: 5rem;
+    }
+    header li{
+        padding-left: 4.25rem;
+    }
+
+    header a{
+        font-size: 0.875rem;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .section-container{
+        width: 100%;
+    }
+
+    .nav-icon{
+        padding-left: 5rem;
+    }
+    .nav-menu{
+        padding-right: 5rem;
+    }
+    header li{
+        padding-left: 4.25rem;
+    }
+
+    header a{
+        font-size: 0.675rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section-container{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .section-container{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 348px) {
+    .section-container{
+        width: 100%;
+    }
+}
