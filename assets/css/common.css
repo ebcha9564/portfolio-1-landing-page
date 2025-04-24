@@ -1,5 +1,6 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
+
 * { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
 
 .section-container{
@@ -35,4 +36,28 @@
 
 .none{
     display: none;
+}
+
+.p-buttons{
+    padding: 0.9375rem 0.625rem;
+}
+
+.p-search-buttons{
+    padding: 1.09375rem 3.6875rem ;
+}
+
+.m-l-20{
+    margin-left: 1.25rem;
+}
+
+.m-0{
+    margin: 0;
+}
+
+.m-t-20{
+    margin-top: 1.25rem;
+}
+
+.p-t-150{
+    padding-top: 9.375rem;
 }

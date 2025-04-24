@@ -17,7 +17,10 @@
     --font-medium:500;
     --font-large: 600;
     --main-line-height: 150%;
+    --sub-line-height: 160%;
     --banner-font-size: 3.25rem;
+    --main-letter-spacing: 0.03em;
+    --sub-letter-spacing: 0.05em;
 
     ul{
         list-style: none;
@@ -44,6 +47,10 @@ header a{
     font-weight: var(--font-medium);
 }
 
+.burger-menu i{
+    color: var(--black-color);
+}
+
 .navi{
     padding-top: 0.21875rem;
     padding-bottom: 0.21875rem;
@@ -59,8 +66,8 @@ header a{
     color: var(--white-color);
     font-size: var(--banner-font-size);
     font-weight: var(--font-large);
+    letter-spacing: var(--main-letter-spacing);
     margin-top: 0;
-
 }
 
 .button-content{
@@ -70,10 +77,134 @@ header a{
 .button-content p{
     margin-top: 0;
     color: var(--white-color);
+    font-weight: var(--font-medium);
+    letter-spacing: var(--sub-letter-spacing);
+    font-size: var(--normal-font-size);
+}
+
+.buttons{
+    background: #3b7fff;
+    border-radius: 10px;
+}
+
+.description p{
+    color: var(--white-color);
+    font-weight: var(--font-regular);
+    letter-spacing: var(--sub-letter-spacing);
+    line-height: var(--sub-line-height);
+}
+
+.search-button button{
+    color: var(--white-color);
+    font-weight: var(--font-medium);
+    font-size: var(--normal-font-size);
+    letter-spacing: var(--main-letter-spacing);
+    background-color: #1A6AFF;
+    border: 1px solid var(--white-color);
+    border-radius: 1.875rem;
+}
+
+.banner-image-content {
+    position: relative;
+    width: 55%;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 5000px;
+    width: 28.375rem;
+    height: 25rem;
+    background-color: #3179FF;
+    z-index: 0;
+}
+
+.circle-1 {
+    top: -25%;
+    left: 30%;
+    opacity: 40%;
+}
+
+.circle-2 {
+    top: -5%;
+    left: 40%;
+    opacity: 90%;
+}
+
+.circle-3 {
+    top: 20%;
+    left: 28%;
+    opacity: 40%;
+}
+
+.img-page {
+    z-index: 1;
 }
 
 
+
+
+
 @media only screen and (max-width: 1280px) {
+    /*Banner Page Section 1 Responsive*/
+    .section-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .nav-icon{
+        padding-left: 5rem;
+    }
+    .nav-menu{
+        padding-right: 5rem;
+    }
+    header li{
+        padding-left: 4.25rem;
+    }
+    header a{
+        font-size: 0.875rem;
+    }
+    .banner-text-content{
+        padding-left: 5rem;
+    }
+    .banner-text-content h2{
+        font-size: 2.5rem;
+    }
+    .buttons p, .description p{
+        font-size: 0.875rem;
+    }
+    .search-button button{
+        font-size: 1rem;
+    }
+    .banner-image-content {
+        position: relative;
+        width: 55%;
+        padding-right: 2.5rem;
+    }
+    .circle {
+        width: 25.375rem;
+        height: 22rem;
+    }
+ 
+    .circle-1 {
+        top: -20%;
+        left: 30%;
+    }
+    
+    .circle-2 {
+        top: 0;
+        left: 38%;
+    }
+    
+    .circle-3 {
+        top: 25%;
+        left: 28%;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+    /*Banner Page Section 1 Responsive*/
     .section-container{
         width: 100%;
         margin: 0 auto;
@@ -88,49 +219,229 @@ header a{
     header li{
         padding-left: 4.25rem;
     }
-
     header a{
         font-size: 0.875rem;
     }
-
-
-
-}
-
-@media only screen and (max-width: 1024px) {
-    .section-container{
-        width: 100%;
-    }
-
-    .nav-icon{
+    .banner-text-content{
         padding-left: 5rem;
     }
-    .nav-menu{
-        padding-right: 5rem;
+    .banner-text-content h2{
+        font-size: 1.8rem;
     }
-    header li{
-        padding-left: 4.25rem;
+    .buttons p{
+        font-size: 0.8rem;
+        text-align: center;
     }
 
-    header a{
-        font-size: 0.675rem;
+    .description p{
+        font-size: 0.8rem;
+    }
+
+    .search-button button{
+        font-size: 0.8rem;
+    }
+    .banner-image-content {
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+        padding-right: 2.5rem;
+    }
+    .circle {
+        width: 25.375rem;
+        height: 22rem;
+    }
+
+    .img-page img{
+        max-width: 500px;
+        position: relative;
+        left: -5%;
+    }
+ 
+    .banner-text-content{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .circles{
+        display: none;
+    }
+
+    .p-buttons{
+        padding: 0.79375rem 1.6875rem ;
     }
 }
 
 @media only screen and (max-width: 768px) {
+    /*Banner Page Section 1 Responsive*/
     .section-container{
         width: 100%;
+    }
+
+    .nav-menu{
+        display: none;
+    }
+
+    .burger-menu.none{
+        display: block;
+        position: absolute;
+        right: 10%;
+        font-size: 1.7rem;
+        top: 0.5%;
+    }
+
+    .navi{
+        padding-top: 0.51875rem;
+        padding-bottom: 0.51875rem;
+    }
+
+    .section-container.p-t-150{
+        padding-top: 80px;
+    }
+
+    .section-container.d-flex{
+        display: block;
+    }
+
+    .banner-text-content{
+        margin-left: 130px;
+    }
+    
+    .banner-text-content h2{
+        font-size: 1.6rem;
+        margin-right: 80px;
+        text-align: center;
+    }
+
+    .search-button{
+        margin-left: 100px;
+        padding-bottom: 30px;
+    }
+
+    .img-page img{
+        width: 100%;
+        max-width: 500px;
+        position: relative;
+        left: 32%;
+    }
+
+    .search-button button{
+        font-size: 0.75rem;
     }
 }
 
 @media only screen and (max-width: 540px) {
+    /*Banner Page Section 1 Responsive*/
     .section-container{
         width: 100%;
+        margin: 0 auto;    
+    }
+
+    .banner-text-content{
+        margin-left: 40px;
+    }
+
+    .banner-text-content h2{
+        font-size: 1.4rem;
+        margin-right: 120px;
+        text-align: center;
+    }
+
+    .buttons p{
+        font-size: 0.6rem;
+    }
+
+    .p-buttons{
+        padding: 0.6375rem 0.625rem;
+    }
+
+    .m-l-20{
+        margin-left: 10px;
+    }
+
+    .button-content{
+        margin-left: 20px;
+    }
+
+    .description{
+        margin-left: 20px;
+    }
+
+    .description p{
+        font-size: 0.6rem;
+    }
+
+    .search-button button{
+        font-size: 0.6rem;
+    }
+
+    .search-button {
+        margin-left: 95px;
+    }
+
+    .p-search-buttons{
+        padding: 0.5375rem 2.1875rem;
+    }
+
+    .img-page img{
+        max-width: 400px;
+        left: 15%;
     }
 }
 
 @media only screen and (max-width: 348px) {
+    /*Banner Page Section 1 Responsive*/
     .section-container{
         width: 100%;
+        margin: 0 auto;    
+    }
+
+    .burger-menu.none{
+        right: 9%;
+        font-size: 1.5rem;
+        top: 0.7%;
+    }
+
+    .banner-text-content {
+        margin: 0;
+        padding: 0;
+    }
+
+    .banner-text-content h2{
+        font-size: 1.4rem;
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    .nav-icon {
+        padding-left: 2rem;
+    }
+
+    .buttons p{
+        font-size: 0.6rem;
+    }
+
+    .p-buttons{
+        padding: 0.6375rem 0.625rem;
+    }
+
+    .m-l-20{
+        margin-left: 10px;
+    }
+
+    .button-content{
+        margin-left: 40px;
+    }
+
+    .description{
+        margin-left: 45px;
+    }
+    .search-button {
+        margin-left: 120px;
+    }
+
+    .img-page img{
+        max-width: 300px;
+        height: auto;
+        left: 6%;
     }
 }
