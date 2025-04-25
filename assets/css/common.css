@@ -30,6 +30,10 @@
     align-items: center;
 }
 
+.default-d-flex{
+    display: flex;
+}
+
 .active{
     display: block;
 }
@@ -60,4 +64,28 @@
 
 .p-t-150{
     padding-top: 9.375rem;
+}
+
+.p-t-80{
+    padding-top: 4.375rem;
+}
+
+.t-center{
+    text-align: center;
+}
+
+.d-grid{
+    display: grid;
+}
+
+.sec02-content-p{
+    padding: 3.625rem 1.25rem 6rem 3.25rem;
+}
+
+.p-t-50{
+    padding-top: 3.125rem;
+}
+
+.p-t-27{
+    padding-top: 1.6875rem;
 }

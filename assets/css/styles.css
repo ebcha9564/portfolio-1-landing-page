@@ -12,7 +12,9 @@
     --review-page-color: #23293F;
     --footer-color: #3A5ED8;
     --normal-font-size:1.125rem;
+    --p-font-size: 1.25rem;
     --nav-font-size: 1.0625rem;
+    --sec02-font-size: 1.75rem;
     --font-regular:400;
     --font-medium:500;
     --font-large: 600;
@@ -21,6 +23,7 @@
     --banner-font-size: 3.25rem;
     --main-letter-spacing: 0.03em;
     --sub-letter-spacing: 0.05em;
+    --title-font-size-sub-page: 2.5rem;
 
     ul{
         list-style: none;
@@ -108,7 +111,6 @@ header a{
     position: relative;
     width: 55%;
 }
-
 .circle {
     position: absolute;
     border-radius: 5000px;
@@ -140,10 +142,72 @@ header a{
     z-index: 1;
 }
 
+/*section 2 content*/
+#content02 .banner-section{
+    height: 100vh;
+    background: var(--main-background-color);
+}
 
+.title-contents h2{
+    font-size: var(--title-font-size-sub-page);
+    font-weight: var(--font-medium);
+    letter-spacing: var(--main-letter-spacing);
+}
 
+.title-contents span{
+    font-weight: var(--font-large);
+    color: var(--brand-color);
+}
 
+.title-contents p{
+    color: var(--black-color);
+    font-size: var(--p-font-size);
+    margin-top: 0.9375rem;
+    line-height: var(--main-line-height);
+}
 
+.sub-section02{
+    background: #fff;
+    width: 636px;
+    height: 280px;
+    border-radius: 20px;
+}
+
+.section02-contents.d-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto; 
+    gap: 24px; 
+    width: 100%; 
+}
+
+.sub-section02-text{
+    padding-left: 3rem;
+}
+.sub-section02-text h3{
+    font-size: var(--sec02-font-size);
+    color: var(--black-color);
+    font-weight: var(--font-medium);
+    letter-spacing: var(--main-letter-spacing);
+}
+
+.sub-section02-text .make-bold{
+    font-weight: var(--font-large);
+}
+
+.sub-section02-text .number{
+    color: var(--brand-color);
+}
+
+.sub-section02-text h3, .sub-section02-text p{
+    margin-top: 0;
+}
+
+.sub-section02-text p{
+    line-height: var(--main-line-height);
+    color: var(--grey-color);
+    font-weight: var(--font-medium);
+}
 @media only screen and (max-width: 1280px) {
     /*Banner Page Section 1 Responsive*/
     .section-container{
