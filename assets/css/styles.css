@@ -3,68 +3,38 @@
 @import url('common.css');
 @import url('reset.css');
 
-:root{
-    --white-color: #EEF1F6;
-    --black-color:#070a11;
-    --grey-color: #6e6e6e;
-    --brand-color: #1A6AFF;
-    --main-background-color: #F4F7FC;
-    --review-page-color: #23293F;
-    --footer-color: #3A5ED8;
-    --normal-font-size:1.125rem;
-    --p-font-size: 1.25rem;
-    --nav-font-size: 1.0625rem;
-    --sec02-font-size: 1.75rem;
-    --font-regular:400;
-    --font-medium:500;
-    --font-large: 600;
-    --main-line-height: 150%;
-    --sub-line-height: 160%;
-    --banner-font-size: 3.25rem;
-    --main-letter-spacing: 0.03em;
-    --sub-letter-spacing: 0.05em;
-    --title-font-size-sub-page: 2.5rem;
-
-    ul{
-        list-style: none;
-    }
-    a{
-        text-decoration: none;
-    }
-}
-
-
 /*header - navigation */
-header{
+header {
     background: #F4F7FC;
     height: auto;
     width: 100%;
 }
-header li{
+
+header li {
     padding-left: 6.25rem;
     color: var(--black-color)
 }
 
-header a{
+header a {
     font-size: var(--nav-font-size);
     font-weight: var(--font-medium);
 }
 
-.burger-menu i{
+.burger-menu i {
     color: var(--black-color);
 }
 
-.navi{
+.navi {
     padding-top: 0.21875rem;
     padding-bottom: 0.21875rem;
 }
 
-.banner-section{
+.banner-section {
     background: var(--brand-color);
     height: 78.5vh;
 }
 
-.banner-text-content h2{
+.banner-text-content h2 {
     line-height: 120%;
     color: var(--white-color);
     font-size: var(--banner-font-size);
@@ -73,11 +43,11 @@ header a{
     margin-top: 0;
 }
 
-.button-content{
+.button-content {
     justify-content: left;
 }
 
-.button-content p{
+.button-content p {
     margin-top: 0;
     color: var(--white-color);
     font-weight: var(--font-medium);
@@ -85,19 +55,19 @@ header a{
     font-size: var(--normal-font-size);
 }
 
-.buttons{
+.buttons {
     background: #3b7fff;
     border-radius: 10px;
 }
 
-.description p{
+.description p {
     color: var(--white-color);
     font-weight: var(--font-regular);
     letter-spacing: var(--sub-letter-spacing);
     line-height: var(--sub-line-height);
 }
 
-.search-button button{
+.search-button button {
     color: var(--white-color);
     font-weight: var(--font-medium);
     font-size: var(--normal-font-size);
@@ -111,6 +81,7 @@ header a{
     position: relative;
     width: 55%;
 }
+
 .circle {
     position: absolute;
     border-radius: 5000px;
@@ -143,121 +114,433 @@ header a{
 }
 
 /*section 2 content*/
-#content02 .banner-section{
+#content02 .banner-section {
     height: 100vh;
     background: var(--main-background-color);
 }
 
-.title-contents h2{
+.title-contents h2 {
     font-size: var(--title-font-size-sub-page);
     font-weight: var(--font-medium);
     letter-spacing: var(--main-letter-spacing);
 }
 
-.title-contents span{
+.title-contents span {
     font-weight: var(--font-large);
     color: var(--brand-color);
 }
 
-.title-contents p{
+.title-contents p {
     color: var(--black-color);
     font-size: var(--p-font-size);
     margin-top: 0.9375rem;
     line-height: var(--main-line-height);
 }
 
-.sub-section02{
+.sub-section02 {
     background: #fff;
     width: 636px;
     height: 280px;
     border-radius: 20px;
 }
 
-.section02-contents.d-grid{
+.section02-contents.d-grid {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto; 
-    gap: 24px; 
-    width: 100%; 
+    grid-template-rows: auto auto;
+    gap: 24px;
+    width: 100%;
 }
 
-.sub-section02-text{
+.sub-section02-text {
     padding-left: 3rem;
 }
-.sub-section02-text h3{
+
+.sub-section02-text h3 {
     font-size: var(--sec02-font-size);
     color: var(--black-color);
     font-weight: var(--font-medium);
     letter-spacing: var(--main-letter-spacing);
 }
 
-.sub-section02-text .make-bold{
+.sub-section02-text .make-bold {
     font-weight: var(--font-large);
 }
 
-.sub-section02-text .number{
+.sub-section02-text .number {
     color: var(--brand-color);
 }
 
-.sub-section02-text h3, .sub-section02-text p{
+.sub-section02-text h3,
+.sub-section02-text p {
     margin-top: 0;
 }
 
-.sub-section02-text p{
+.sub-section02-text p {
     line-height: var(--main-line-height);
     color: var(--grey-color);
     font-weight: var(--font-medium);
 }
+
+/*section03*/
+#content03 .container-01 {
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+}
+
+.content03-text h2,
+p {
+    margin: 0;
+}
+
+.content03-text h2 {
+    font-size: var(--title-font-size-sub-page);
+    color: var(--black-color);
+    letter-spacing: var(--main-letter-spacing);
+}
+
+.content03-text span {
+    color: var(--brand-color);
+}
+
+.content03-text p {
+    font-size: var(--p-font-size);
+    color: var(--black-color);
+    letter-spacing: var(--main-letter-spacing);
+}
+
+.tabs {
+    width: 81rem;
+    margin: 0 auto;
+}
+
+.tab-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #D9D9D9;
+    position: relative;
+}
+
+.tab-box .tab-btn {
+    font-size: var(--p-font-size);
+    font-weight: var(--font-large);
+    color: #d9d9d9;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-bottom: 1.25rem;
+}
+
+.tab-box .tab-btn.active {
+    color: var(--brand-color);
+}
+
+.image-content {
+    background: #E2DEDE;
+    width: 26rem;
+    height: 15.125rem;
+    border-radius: 20px 20px 0 0;
+}
+
+.text-content {
+    width: 26rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.content button {
+    width: 26rem;
+    border-radius: 0 0 20px 20px;
+    border: none;
+    padding-top: 16px;
+    background: #3B7FFF;
+    color: var(--white-color);
+    font-size: var(--p-font-size);
+    font-weight: var(--font-large);
+    cursor: pointer;
+}
+
+.text-content h3 {
+    color: var(--black-color);
+    font-size: var(--button-font-size);
+    font-weight: var(--font-large);
+    margin: 0;
+    letter-spacing: var(--main-letter-spacing);
+}
+
+.text-content p {
+    color: var(--grey-color);
+    font-size: var(--p-font-size);
+    letter-spacing: var(--main-letter-spacing);
+    font-weight: var(--font-medium);
+}
+
+.text-content span {
+    font-size: var(--p-font-size);
+    letter-spacing: var(--main-letter-spacing);
+    font-weight: var(--font-medium);
+}
+
+.blue {
+    color: var(--brand-color);
+}
+
+.content-box .content {
+    display: none;
+    animation: moving 0.5s ease-in-out;
+}
+
+.content-box img {
+    width: 380px;
+    height: 240px;
+    padding-left: 3rem;
+}
+
+.content-box .content.active {
+    display: block;
+}
+
+.line {
+    position: absolute;
+    top: 96%;
+    left: 0;
+    width: 20.3rem;
+    height: 0.3125rem;
+    background-color: var(--brand-color);
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+@keyframes moving {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+#content04 {
+    width: 100%;
+    background: #F4F7FC;
+}
+
+#content04 .container-02 {
+    height: 110vh;
+    width: 1294px;
+    z-index: -100;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.name-component,
+.phone-component,
+.car-component,
+.describe-component {
+    width: 100%;
+    padding: 3px 10px;
+    margin: 8px 0;
+    border: none;
+    background-color: #F4F7FC;
+    border-bottom: 1px solid #070A11;
+}
+
+.name-component input,
+.phone-component input,
+.car-component input,
+.describe-component input {
+    margin: 8px 0;
+}
+
+input {
+    border: none;
+    background-color: #F4F7FC;
+}
+
+.text-content-2 h2 {
+    color: var(--black-color);
+    font-size: var(--title-font-size-sub-page);
+    font-weight: var(--font-medium);
+    letter-spacing: var(--main-letter-spacing);
+}
+
+.text-content-2 span {
+    color: var(--brand-color);
+}
+
+.text-content-2 p {
+    color: var(--black-color);
+    font-size: var(--p-font-size);
+    font-weight: var(--font-regular);
+    letter-spacing: var(--main-letter-spacing);
+}
+
+
+.btn-content button {
+    background: var(--brand-color);
+    border: none;
+    outline: none;
+    color: var(--white-color);
+    border-radius: 1rem;
+    padding: 0.625rem 1.25rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: var(--p-font-size);
+}
+
+.input-content h2 {
+    color: var(--black-color);
+    font-weight: var(--font-medium);
+    font-size: 1.75rem;
+    padding-top: 2.2rem;
+    padding-bottom: 2.8125rem;
+    margin: 0;
+}
+
+.input-content label {
+    color: var(--black-color);
+    font-size: var(--p-font-size);
+    font-weight: var(--font-regular);
+}
+
+form input {
+    width: 18px;
+    height: 18px;
+}
+
+.button-submit button {
+    width: 100%;
+    padding: 1.25rem 17.125rem;
+    color: var(--white-color);
+    background-color: var(--brand-color);
+    font-size: var(--p-font-size);
+    border-radius: 0px;
+    border: 0px;
+}
+
+#content05 {
+    width: 100%;
+    height: 150vh;
+    background: #fff;
+}
+
+.text-content05 h2 {
+    color: var(--black-color);
+    font-size: var(--title-font-size-sub-page);
+    font-weight: var(--font-medium);
+    letter-spacing: var(--main-letter-spacing);
+}
+
+.text-content05 span {
+    color: var(--brand-color);
+}
+
+.text-content05 p {
+    color: var(--black-color);
+    font-size: var(--p-font-size);
+    font-weight: var(--font-regular);
+    letter-spacing: var(--main-letter-spacing);
+}
+
+.container {
+    width: 1296px;
+    margin: 0 auto;
+}
+
+.questions-content {
+    background: #F4F7FC;
+    border-radius: 30px;
+
+}
+
+.questions-1 {
+    border-bottom: 1px solid #D9D9D9;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.questions-1 {
+    justify-content: space-between;
+    gap: 15rem;
+}
+
+.text-content-questions {
+    font-size: var(--p-font-size);
+    color: var(--black-color);
+    line-height: var(--main-line-height);
+    letter-spacing: var(--main-letter-spacing);
+    font-weight: var(--font-regular);
+}
+
 @media only screen and (max-width: 1280px) {
+
     /*Banner Page Section 1 Responsive*/
-    .section-container{
+    .section-container {
         width: 100%;
         margin: 0 auto;
     }
-    .nav-icon{
+
+    .nav-icon {
         padding-left: 5rem;
     }
-    .nav-menu{
+
+    .nav-menu {
         padding-right: 5rem;
     }
-    header li{
+
+    header li {
         padding-left: 4.25rem;
     }
-    header a{
+
+    header a {
         font-size: 0.875rem;
     }
-    .banner-text-content{
+
+    .banner-text-content {
         padding-left: 5rem;
     }
-    .banner-text-content h2{
+
+    .banner-text-content h2 {
         font-size: 2.5rem;
     }
-    .buttons p, .description p{
+
+    .buttons p,
+    .description p {
         font-size: 0.875rem;
     }
-    .search-button button{
+
+    .search-button button {
         font-size: 1rem;
     }
+
     .banner-image-content {
         position: relative;
         width: 55%;
         padding-right: 2.5rem;
     }
+
     .circle {
         width: 25.375rem;
         height: 22rem;
     }
- 
+
     .circle-1 {
         top: -20%;
         left: 30%;
     }
-    
+
     .circle-2 {
         top: 0;
         left: 38%;
     }
-    
+
     .circle-3 {
         top: 25%;
         left: 28%;
@@ -268,84 +551,94 @@ header a{
 }
 
 @media only screen and (max-width: 1024px) {
+
     /*Banner Page Section 1 Responsive*/
-    .section-container{
+    .section-container {
         width: 100%;
         margin: 0 auto;
     }
 
-    .nav-icon{
+    .nav-icon {
         padding-left: 5rem;
     }
-    .nav-menu{
+
+    .nav-menu {
         padding-right: 5rem;
     }
-    header li{
+
+    header li {
         padding-left: 4.25rem;
     }
-    header a{
+
+    header a {
         font-size: 0.875rem;
     }
-    .banner-text-content{
+
+    .banner-text-content {
         padding-left: 5rem;
     }
-    .banner-text-content h2{
+
+    .banner-text-content h2 {
         font-size: 1.8rem;
     }
-    .buttons p{
+
+    .buttons p {
         font-size: 0.8rem;
         text-align: center;
     }
 
-    .description p{
+    .description p {
         font-size: 0.8rem;
     }
 
-    .search-button button{
+    .search-button button {
         font-size: 0.8rem;
     }
+
     .banner-image-content {
         position: relative;
         width: 100%;
         max-width: 500px;
         padding-right: 2.5rem;
     }
+
     .circle {
         width: 25.375rem;
         height: 22rem;
     }
 
-    .img-page img{
+    .img-page img {
         max-width: 500px;
         position: relative;
         left: -5%;
     }
- 
-    .banner-text-content{
+
+    .banner-text-content {
         width: 100%;
         max-width: 500px;
     }
 
-    .circles{
+    .circles {
         display: none;
     }
 
-    .p-buttons{
-        padding: 0.79375rem 1.6875rem ;
+    .p-buttons {
+        padding: 0.79375rem 1.6875rem;
     }
 }
 
 @media only screen and (max-width: 768px) {
+
     /*Banner Page Section 1 Responsive*/
-    .section-container{
+    .section-container {
         width: 100%;
     }
 
-    .nav-menu{
+    .nav-menu {
         display: none;
     }
 
-    .burger-menu.none{
+    .burger-menu.none {
         display: block;
         position: absolute;
         right: 10%;
@@ -353,88 +646,89 @@ header a{
         top: 0.5%;
     }
 
-    .navi{
+    .navi {
         padding-top: 0.51875rem;
         padding-bottom: 0.51875rem;
     }
 
-    .section-container.p-t-150{
+    .section-container.p-t-150 {
         padding-top: 80px;
     }
 
-    .section-container.d-flex{
+    .section-container.d-flex {
         display: block;
     }
 
-    .banner-text-content{
+    .banner-text-content {
         margin-left: 130px;
     }
-    
-    .banner-text-content h2{
+
+    .banner-text-content h2 {
         font-size: 1.6rem;
         margin-right: 80px;
         text-align: center;
     }
 
-    .search-button{
+    .search-button {
         margin-left: 100px;
         padding-bottom: 30px;
     }
 
-    .img-page img{
+    .img-page img {
         width: 100%;
         max-width: 500px;
         position: relative;
         left: 32%;
     }
 
-    .search-button button{
+    .search-button button {
         font-size: 0.75rem;
     }
 }
 
 @media only screen and (max-width: 540px) {
+
     /*Banner Page Section 1 Responsive*/
-    .section-container{
+    .section-container {
         width: 100%;
-        margin: 0 auto;    
+        margin: 0 auto;
     }
 
-    .banner-text-content{
+    .banner-text-content {
         margin-left: 40px;
     }
 
-    .banner-text-content h2{
+    .banner-text-content h2 {
         font-size: 1.4rem;
         margin-right: 120px;
         text-align: center;
     }
 
-    .buttons p{
+    .buttons p {
         font-size: 0.6rem;
     }
 
-    .p-buttons{
+    .p-buttons {
         padding: 0.6375rem 0.625rem;
     }
 
-    .m-l-20{
+    .m-l-20 {
         margin-left: 10px;
     }
 
-    .button-content{
+    .button-content {
         margin-left: 20px;
     }
 
-    .description{
+    .description {
         margin-left: 20px;
     }
 
-    .description p{
+    .description p {
         font-size: 0.6rem;
     }
 
-    .search-button button{
+    .search-button button {
         font-size: 0.6rem;
     }
 
@@ -442,24 +736,25 @@ header a{
         margin-left: 95px;
     }
 
-    .p-search-buttons{
+    .p-search-buttons {
         padding: 0.5375rem 2.1875rem;
     }
 
-    .img-page img{
+    .img-page img {
         max-width: 400px;
         left: 15%;
     }
 }
 
 @media only screen and (max-width: 348px) {
+
     /*Banner Page Section 1 Responsive*/
-    .section-container{
+    .section-container {
         width: 100%;
-        margin: 0 auto;    
+        margin: 0 auto;
     }
 
-    .burger-menu.none{
+    .burger-menu.none {
         right: 9%;
         font-size: 1.5rem;
         top: 0.7%;
@@ -470,7 +765,7 @@ header a{
         padding: 0;
     }
 
-    .banner-text-content h2{
+    .banner-text-content h2 {
         font-size: 1.4rem;
         margin-right: 0px;
         text-align: center;
@@ -480,30 +775,31 @@ header a{
         padding-left: 2rem;
     }
 
-    .buttons p{
+    .buttons p {
         font-size: 0.6rem;
     }
 
-    .p-buttons{
+    .p-buttons {
         padding: 0.6375rem 0.625rem;
     }
 
-    .m-l-20{
+    .m-l-20 {
         margin-left: 10px;
     }
 
-    .button-content{
+    .button-content {
         margin-left: 40px;
     }
 
-    .description{
+    .description {
         margin-left: 45px;
     }
+
     .search-button {
         margin-left: 120px;
     }
 
-    .img-page img{
+    .img-page img {
         max-width: 300px;
         height: auto;
         left: 6%;

@@ -1,91 +1,214 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
 
-* { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
+* {
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
 
-.section-container{
+:root {
+    --white-color: #EEF1F6;
+    --black-color: #070a11;
+    --grey-color: #6e6e6e;
+    --brand-color: #1A6AFF;
+    --main-background-color: #F4F7FC;
+    --review-page-color: #23293F;
+    --footer-color: #3A5ED8;
+    --normal-font-size: 1.125rem;
+    --p-font-size: 1.25rem;
+    --nav-font-size: 1.0625rem;
+    --sec02-font-size: 1.75rem;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-large: 600;
+    --main-line-height: 150%;
+    --sub-line-height: 160%;
+    --banner-font-size: 3.25rem;
+    --main-letter-spacing: 0.03em;
+    --sub-letter-spacing: 0.05em;
+    --title-font-size-sub-page: 2.5rem;
+    --button-font-size: 1.75rem;
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+
+.section-container {
     width: 1296px;
     margin: 0 auto;
 }
 
-.w-100{
+.w-100 {
     width: 100%;
 }
 
-.w-50{
+.w-60 {
+    width: 60%;
+}
+
+.w-55 {
+    width: 55%;
+}
+
+.w-50 {
     width: 50%;
 }
 
-.w-33{
+.w-40 {
+    width: 40%;
+}
+
+.w-33 {
     width: 33%;
 }
 
-.w-25{
+.w-25 {
     width: 25%;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.default-d-flex{
+.default-d-flex {
     display: flex;
 }
 
-.active{
+.active {
     display: block;
 }
 
-.none{
+.none {
     display: none;
 }
 
-.p-buttons{
+.p-buttons {
     padding: 0.9375rem 0.625rem;
 }
 
-.p-search-buttons{
-    padding: 1.09375rem 3.6875rem ;
+.p-search-buttons {
+    padding: 1.09375rem 3.6875rem;
 }
 
-.m-l-20{
+.m-l-20 {
     margin-left: 1.25rem;
 }
 
-.m-0{
+.m-0 {
     margin: 0;
 }
 
-.m-t-20{
+.m-t-20 {
     margin-top: 1.25rem;
 }
 
-.p-t-150{
+.p-t-150 {
     padding-top: 9.375rem;
 }
 
-.p-t-80{
+.p-t-80 {
     padding-top: 4.375rem;
 }
 
-.t-center{
+.p-t-81 {
+    padding-top: 5rem;
+}
+
+.p-t-44 {
+    padding-top: 2.75rem;
+}
+
+.t-center {
     text-align: center;
 }
 
-.d-grid{
+.d-grid {
     display: grid;
 }
 
-.sec02-content-p{
+.sec02-content-p {
     padding: 3.625rem 1.25rem 6rem 3.25rem;
 }
 
-.p-t-50{
+.p-t-50 {
     padding-top: 3.125rem;
 }
 
-.p-t-27{
+.p-t-27 {
     padding-top: 1.6875rem;
+}
+
+.p-t-20 {
+    padding-top: 1.25rem;
+}
+
+.p-t-10 {
+    padding-top: 0.625rem;
+}
+
+.p-t-16 {
+    padding-top: 1rem;
+}
+
+.p-t-30 {
+    padding-top: 1.875rem;
+}
+
+.p-b-16 {
+    padding-bottom: 1rem;
+}
+
+.p-l-20 {
+    padding-left: 1.25rem;
+}
+
+.p-r-150 {
+    padding-right: 9.375rem;
+}
+
+.p-b-20 {
+    padding-bottom: 1.25rem;
+}
+
+.p-b-32 {
+    padding-bottom: 2rem;
+}
+
+.p-t-24 {
+    padding-top: 1.5rem;
+}
+
+.m-t-80 {
+    margin-top: 5rem;
+}
+
+.p-t-480 {
+    padding-top: 30rem;
+}
+
+.p-b-20 {
+    padding-bottom: 1.25rem;
+}
+
+.p-b-30 {
+    padding-bottom: 1.875rem;
+}
+
+.p-l-80 {
+    padding-left: 5rem;
+}
+
+.p-r-80 {
+    padding-right: 5rem;
+}
+
+.f-16 {
+    font-size: 1rem;
 }
