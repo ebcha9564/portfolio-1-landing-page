@@ -37,6 +37,9 @@
     }
 }
 
+.bg-white {
+    background: #fff;
+}
 
 .section-container {
     width: 1296px;
@@ -123,6 +126,10 @@
 
 .p-t-44 {
     padding-top: 2.75rem;
+}
+
+.p-r-16 {
+    padding-right: 1rem;
 }
 
 .t-center {
